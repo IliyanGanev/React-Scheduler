@@ -12,3 +12,395 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 201ms (Views: 12.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-06 17:57:49 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.erb within layouts/application
+  Rendered appointments/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1727ms (Views: 1536.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 18:02:55 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.erb within layouts/application
+  Rendered appointments/index.html.erb within layouts/application (330.0ms)
+Completed 500 Internal Server Error in 336ms
+
+
+  
+ActionView::Template::Error (undefined method `react_compontent' for #<#<Class:0x007fe34c7a7bc8>:0x007fe34cf42c98>
+Did you mean?  react_component):
+    1: <%= react_compontent 'Appointments' %>
+  
+app/views/appointments/index.html.erb:1:in `_app_views_appointments_index_html_erb__4292714553707544364_70307086935020'
+Started GET "/" for 127.0.0.1 at 2017-12-06 18:03:11 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.erb within layouts/application
+  Rendered appointments/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 1523ms
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Expected corresponding JSX closing tag for <h1> (4:21)
+  2 | 	render: function(){
+  3 | 		return (
+> 4 | 			<h1>CallendarReact</h>
+    |                      ^
+  5 | 		)
+  6 | 	}
+  7 | });):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___986393741907988240_70307087148000'
+Started GET "/" for 127.0.0.1 at 2017-12-06 18:03:28 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.erb within layouts/application
+  Rendered appointments/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1001ms (Views: 999.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 18:03:49 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.erb within layouts/application
+  Rendered appointments/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1011ms (Views: 1007.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 18:37:38 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.erb within layouts/application
+  Rendered appointments/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 36.6ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAppointments (20171207023751)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "appt_time" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171207023751"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-07 05:03:22.045626"], ["updated_at", "2017-12-07 05:03:22.045626"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:22:35 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.erb within layouts/application
+  Rendered appointments/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 1762ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Adjacent JSX elements must be wrapped in an enclosing tag (5:3)
+  3 | 		return (
+  4 | 			<h1>CallendarReact</h1>
+> 5 | 			<h2>Appointments</h2>
+    |    ^
+  6 | 			<h3>Make new
+  7 | 		)
+  8 | 	}):
+    4:     <title>Calreact</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2375090842211245889_70353352187100'
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:23:27 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.erb within layouts/application
+  Rendered appointments/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1370ms (Views: 1356.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:41:42 -0800
+  
+LoadError (cannot load such file -- /Users/botilko/React/ReactCallendar/config/routes.rb):
+  
+activesupport (5.1.4) lib/active_support/dependencies.rb:286:in `load'
+activesupport (5.1.4) lib/active_support/dependencies.rb:286:in `block in load'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:286:in `load'
+railties (5.1.4) lib/rails/application/routes_reloader.rb:55:in `block in load_paths'
+railties (5.1.4) lib/rails/application/routes_reloader.rb:55:in `each'
+railties (5.1.4) lib/rails/application/routes_reloader.rb:55:in `load_paths'
+railties (5.1.4) lib/rails/application/routes_reloader.rb:18:in `reload!'
+railties (5.1.4) lib/rails/application/routes_reloader.rb:41:in `block in updater'
+activesupport (5.1.4) lib/active_support/file_update_checker.rb:81:in `execute'
+railties (5.1.4) lib/rails/application/routes_reloader.rb:25:in `execute'
+railties (5.1.4) lib/rails/application/finisher.rb:141:in `block (2 levels) in <module:Finisher>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `instance_exec'
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+activesupport (5.1.4) lib/active_support/callbacks.rb:601:in `block (2 levels) in default_terminator'
+activesupport (5.1.4) lib/active_support/callbacks.rb:600:in `catch'
+activesupport (5.1.4) lib/active_support/callbacks.rb:600:in `block in default_terminator'
+activesupport (5.1.4) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+activesupport (5.1.4) lib/active_support/execution_wrapper.rb:108:in `run!'
+activesupport (5.1.4) lib/active_support/reloader.rb:113:in `run!'
+activesupport (5.1.4) lib/active_support/execution_wrapper.rb:70:in `block in run!'
+activesupport (5.1.4) lib/active_support/execution_wrapper.rb:67:in `tap'
+activesupport (5.1.4) lib/active_support/execution_wrapper.rb:67:in `run!'
+activesupport (5.1.4) lib/active_support/reloader.rb:59:in `run!'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:10:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:43:31 -0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.erb within layouts/application
+  Rendered appointments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2391ms (Views: 2370.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:44:38 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.erb within layouts/application
+  Rendered appointments/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 113ms (Views: 109.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:44:55 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  Rendered appointments/index.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 51ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:54:47 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  Rendered appointments/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 75ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:58:20 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (1.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 50ms (Views: 46.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 22:12:27 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "	width": expected "{", was "; 500px;"):
+    4:     <title>Calreact</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/appointments.scss:6
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3288127438153377156_70240228554740'
+Started GET "/" for 127.0.0.1 at 2017-12-06 22:12:39 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 61ms (Views: 58.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-06 22:13:10 -0800
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for AppointmentsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/appointments" for 127.0.0.1 at 2017-12-06 22:18:44 -0800
+Processing by AppointmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vk+V2/eZGLL41yf9RRtZV4OMhQF3MsFl681Hmu2tenqGDdh6mM0GQcvvrcQ1DFUiLZPqR2VjUDkD0A2Pg5L9pQ==", "appointment"=>{"title"=>"s", "appt_time"=>"s"}, "commit"=>"Make appointment"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "s"], ["created_at", "2017-12-07 06:18:44.853837"], ["updated_at", "2017-12-07 06:18:44.853837"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 22:18:44 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (1.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 41ms (Views: 36.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-06 22:19:33 -0800
+Processing by AppointmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fYbv9egjK5bre5wta4tQQUO1X3VAOZdiTdKovFy/Uz2txKJUh3c1ZdhDFhQbnFw07aowM1JoBj6lz+KpMoDU4g==", "appointment"=>{"title"=>"Meet someone", "appt_time"=>"21/02/2018 6:14pm"}, "commit"=>"Make appointment"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Meet someone"], ["appt_time", "2018-02-21 18:14:00"], ["created_at", "2017-12-07 06:19:33.609768"], ["updated_at", "2017-12-07 06:19:33.609768"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 22:19:33 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-06 22:28:51 -0800
+Processing by AppointmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5slmSQKA9wc3St1mZJy8zrkgtaKjoVdwHyyVu/aSfvU2iyvobdTp9ARyV18Ui7C7Fz/a5LHwxiz3Md+umK35Kg==", "appointment"=>{"title"=>"Euro trip", "appt_time"=>"5 July 2018"}, "commit"=>"Make appointment"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Euro trip"], ["appt_time", "2018-07-05 00:00:00"], ["created_at", "2017-12-07 06:28:51.894783"], ["updated_at", "2017-12-07 06:28:51.894783"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 22:28:51 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  Rendered appointments/index.html.haml within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial appointments/_appoinments, application/_appoinments with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/botilko/React/ReactCalendar/app/views"
+):
+    10: 	= f.submit 'Make appointment'
+    11: 
+    12: 	#appointments
+    13: 	= render 'appoinments'
+  
+app/views/appointments/index.html.haml:13:in `block in _app_views_appointments_index_html_haml__2283345408465290395_70240294888040'
+app/views/appointments/index.html.haml:7:in `_app_views_appointments_index_html_haml__2283345408465290395_70240294888040'
+Started GET "/" for 127.0.0.1 at 2017-12-06 22:29:43 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/_appointments.html.haml (3.7ms)
+  Rendered appointments/index.html.haml within layouts/application (10.3ms)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-06 22:30:11 -0800
+Processing by AppointmentsController#create as JS
+  Parameters: {"utf8"=>"✓", "appointment"=>{"title"=>"Look for jobs", "appt_time"=>"5 dec 2017"}, "commit"=>"Make appointment"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Look for jobs"], ["appt_time", "2017-12-05 00:00:00"], ["created_at", "2017-12-07 06:30:11.529363"], ["updated_at", "2017-12-07 06:30:11.529363"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 200 OK in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 22:30:11 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/_appointments.html.haml (5.1ms)
+  Rendered appointments/index.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 63ms (Views: 57.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-06 22:37:40 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/_appointments.html.haml (2.9ms)
+  Rendered appointments/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.2ms)
+
+
