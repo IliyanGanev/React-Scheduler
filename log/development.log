@@ -1121,3 +1121,254 @@ Processing by AppointmentsController#index as HTML
 Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-07 21:22:20 -0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 735ms (Views: 715.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-07 21:25:57 -0800
+Processing by AppointmentsController#index as HTML
+Started GET "/?title=Standup+Meeting&appt_time=Tomorrow+at+9am" for 127.0.0.1 at 2017-12-07 21:26:07 -0800
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 1793ms (Views: 1762.9ms | ActiveRecord: 1.4ms)
+
+
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}
+Started GET "/?title=Standup+Meeting&appt_time=Tomorrow+at+9am" for 127.0.0.1 at 2017-12-07 21:26:09 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (7.6ms)
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 177ms (Views: 165.0ms | ActiveRecord: 1.0ms)
+
+
+Completed 200 OK in 165ms (Views: 159.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?title=Standup+Meeting&appt_time=Tomorrow+at+9am" for 127.0.0.1 at 2017-12-07 21:29:10 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 1161ms (Views: 1150.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/?title=Standup+Meeting&appt_time=Tomorrow+at+9am" for 127.0.0.1 at 2017-12-07 21:30:07 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 1081ms (Views: 1070.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/?title=Standup+Meeting&appt_time=Tomorrow+at+9am" for 127.0.0.1 at 2017-12-07 21:31:31 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 1014ms (Views: 1002.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/?title=Standup+Meeting&appt_time=Tomorrow+at+9am" for 127.0.0.1 at 2017-12-07 21:32:12 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 1086ms (Views: 1073.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/?title=Standup+Meeting&appt_time=t+9am" for 127.0.0.1 at 2017-12-07 22:02:08 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"t 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (22.7ms)
+Completed 500 Internal Server Error in 829ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (16:2)
+  14 | 	}
+  15 | 
+> 16 | 	 render: function() {
+     |   ^
+  17 |     return (
+  18 |       <div>
+  19 |         <h2>Make a new appointment</h2>):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___3512350905283659557_70179327204700'
+Started GET "/?title=Standup+Meeting&appt_time=t+9am" for 127.0.0.1 at 2017-12-07 22:02:51 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"t 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 812ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (16:2)
+  14 | 	}
+  15 | 
+> 16 | 	 render: function() {
+     |   ^
+  17 |     return (
+  18 |       <div>
+  19 |         <h2>Make a new appointment</h2>):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___3512350905283659557_70179290369000'
+Started GET "/?title=Standup+Meeting&appt_time=t+9am" for 127.0.0.1 at 2017-12-07 22:04:33 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"t 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 808ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (16:2)
+  14 | 	}
+  15 | 
+> 16 | 	 render: function() {
+     |   ^
+  17 |     return (
+  18 |       <div>
+  19 |         <h2>Make a new appointment</h2>):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___3512350905283659557_70179295599960'
+Started GET "/?title=Standup+Meeting&appt_time=t+9am" for 127.0.0.1 at 2017-12-07 22:05:18 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"t 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 1619ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (18:3)
+  16 |     $.post('/appointments',
+  17 |             {appointment: appointment});
+> 18 | 			)
+     |    ^
+  19 | 	},
+  20 | 
+  21 | 	render: function(){):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___3512350905283659557_70179351307140'
+Started GET "/?title=Standup+Meeting&appt_time=t+9am" for 127.0.0.1 at 2017-12-07 22:07:49 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"t 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 1071ms (Views: 1054.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/?title=Standup+Meeting&appt_time=t+9am" for 127.0.0.1 at 2017-12-07 22:08:16 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"t 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 1068ms (Views: 1055.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/?title=Standup+Meeting&appt_time=t+9am" for 127.0.0.1 at 2017-12-07 22:09:02 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"t 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 777ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (28:3)
+  26 |           onFormSubmit={this.handleFormSubmit} />
+  27 |         <AppointmentsList appointments={this.state.appointments} /
+> 28 | 			</div>
+     |    ^
+  29 | 		)
+  30 | 	}
+  31 | });):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___3512350905283659557_70179355524220'
+Started GET "/?title=Standup+Meeting&appt_time=t+9am" for 127.0.0.1 at 2017-12-07 22:10:02 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"t 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 1060ms (Views: 1048.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?title=Standup+Meeting&appt_time=t+9am" for 127.0.0.1 at 2017-12-07 22:10:30 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"t 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 1119ms (Views: 1105.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/?title=Standup+Meeting&appt_time=t+9am" for 127.0.0.1 at 2017-12-07 22:25:57 -0800
+Processing by AppointmentsController#index as HTML
+  Parameters: {"title"=>"Standup Meeting", "appt_time"=>"t 9am"}
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 64ms (Views: 59.3ms | ActiveRecord: 0.3ms)
+
+
