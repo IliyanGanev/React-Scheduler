@@ -1072,3 +1072,52 @@ Processing by AppointmentsController#index as HTML
 Completed 200 OK in 1074ms (Views: 1061.2ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-07 20:55:43 -0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (17.6ms)
+Completed 200 OK in 3160ms (Views: 3140.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-07 21:11:21 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 1917ms (Views: 1903.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-07 21:12:33 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 1098ms (Views: 1077.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-07 21:12:52 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-07 21:15:04 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 57ms (Views: 52.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-07 21:18:17 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
