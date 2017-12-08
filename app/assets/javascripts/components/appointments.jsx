@@ -2,7 +2,8 @@ var Appointments = createReactClass({
 	render: function(){
 		return (
 			<div>
-				<h1>CallendarReact</h1>
+				<AppointmentForm />
+				<AppointmentsList appointments={this.props.appointments}/>
 			</div>
 		)
 	}
