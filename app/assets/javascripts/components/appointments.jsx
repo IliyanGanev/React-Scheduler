@@ -22,8 +22,9 @@ var Appointments = createReactClass({
 	},
 
 	addNewAppointment: function(appointment) {
-		var appointments = React.addons.update(this.state.appointments, {$push: [appointment]});
-		this.setState({ appointments: appointments});
+	var newState = this.state.appointments.concat(appointment);
+	 this.setState({ appointments: newState })
+
 	},
 
 	render: function(){
