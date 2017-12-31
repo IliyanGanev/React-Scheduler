@@ -1663,3 +1663,38 @@ Processing by AppointmentsController#create as */*
 Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-08 17:17:52 -0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (16.4ms)
+Completed 200 OK in 780ms (Views: 760.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-08 17:25:46 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"sorted", "appt_time"=>"2017-12-08T08:00:00.000Z"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sorted"], ["appt_time", "2017-12-08 08:00:00"], ["created_at", "2017-12-09 01:25:56.767909"], ["updated_at", "2017-12-09 01:25:56.767909"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 32ms (Views: 0.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-08 17:26:19 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (24.9ms)
+Completed 200 OK in 1942ms (Views: 1937.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-30 17:09:18 -0800
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (1.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (26.1ms)
+Completed 200 OK in 820ms (Views: 780.5ms | ActiveRecord: 3.0ms)
+
+

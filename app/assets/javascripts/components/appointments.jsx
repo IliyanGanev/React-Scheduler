@@ -23,7 +23,11 @@ var Appointments = createReactClass({
 
 	addNewAppointment: function(appointment) {
 	var newState = this.state.appointments.concat(appointment);
-	 this.setState({ appointments: newState })
+
+	 this.setState({ appointments: newState.sort(function(a, b){
+	 	return new Date(a.appt_time) - new Date(b.appt_time);
+	 }) 
+	});
 
 	},
 
