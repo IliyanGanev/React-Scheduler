@@ -1698,3 +1698,292 @@ Processing by AppointmentsController#index as HTML
 Completed 200 OK in 820ms (Views: 780.5ms | ActiveRecord: 3.0ms)
 
 
+Started POST "/appointments" for 127.0.0.1 at 2017-12-30 17:32:28 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Standup Meeting"], ["appt_time", "2017-12-31 09:00:00"], ["created_at", "2017-12-31 01:32:28.936141"], ["updated_at", "2017-12-31 01:32:28.936141"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-30 17:32:30 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Standup Meeting"], ["appt_time", "2017-12-31 09:00:00"], ["created_at", "2017-12-31 01:32:30.547154"], ["updated_at", "2017-12-31 01:32:30.547154"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-30 17:32:31 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Standup Meeting"], ["appt_time", "2017-12-31 09:00:00"], ["created_at", "2017-12-31 01:32:31.436993"], ["updated_at", "2017-12-31 01:32:31.436993"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-30 17:32:32 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Standup Meeting"], ["appt_time", "2017-12-31 09:00:00"], ["created_at", "2017-12-31 01:32:32.280275"], ["updated_at", "2017-12-31 01:32:32.280275"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-30 17:32:33 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Standup Meeting"], ["appt_time", "2017-12-31 09:00:00"], ["created_at", "2017-12-31 01:32:33.406987"], ["updated_at", "2017-12-31 01:32:33.406987"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-30 17:32:34 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Standup Meeting"], ["appt_time", "2017-12-31 09:00:00"], ["created_at", "2017-12-31 01:32:34.191234"], ["updated_at", "2017-12-31 01:32:34.191234"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-30 17:32:35 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Standup Meeting"], ["appt_time", "2017-12-31 09:00:00"], ["created_at", "2017-12-31 01:32:35.088626"], ["updated_at", "2017-12-31 01:32:35.088626"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-30 17:32:35 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Standup Meeting"], ["appt_time", "2017-12-31 09:00:00"], ["created_at", "2017-12-31 01:32:35.962913"], ["updated_at", "2017-12-31 01:32:35.962913"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-30 17:32:37 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Standup Meeting"], ["appt_time", "2017-12-31 09:00:00"], ["created_at", "2017-12-31 01:32:37.464110"], ["updated_at", "2017-12-31 01:32:37.464110"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-30 17:32:38 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Standup Meeting", "appt_time"=>"Tomorrow at 9am"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Standup Meeting"], ["appt_time", "2017-12-31 09:00:00"], ["created_at", "2017-12-31 01:32:38.208707"], ["updated_at", "2017-12-31 01:32:38.208707"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2017-12-30 22:22:04 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"whata", "appt_time"=>"Tomorrow at 10pm"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.2ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "whata"], ["appt_time", "2017-12-31 22:00:00"], ["created_at", "2017-12-31 06:22:04.723912"], ["updated_at", "2017-12-31 06:22:04.723912"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-02 17:21:41 -0800
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (1.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 690ms (Views: 651.9ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-01-02 17:22:02 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Start the year", "appt_time"=>"Tomorrow at 9am"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Start the year"], ["appt_time", "2018-01-03 09:00:00"], ["created_at", "2018-01-03 01:22:02.818719"], ["updated_at", "2018-01-03 01:22:02.818719"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 10:57:32 -0800
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (1.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (29.5ms)
+Completed 200 OK in 700ms (Views: 673.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 11:14:01 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 2540ms (Views: 2529.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-01-03 11:14:22 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"aaaaa", "appt_time"=>"02-12-19"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aaaaa"], ["appt_time", "0002-12-19 00:00:00"], ["created_at", "2018-01-03 19:14:22.766725"], ["updated_at", "2018-01-03 19:14:22.766725"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 9ms (Views: 0.7ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-01-03 11:14:41 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"aaaaa", "appt_time"=>"02-12-2020"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "aaaaa"], ["appt_time", "2020-12-02 00:00:00"], ["created_at", "2018-01-03 19:14:41.676375"], ["updated_at", "2018-01-03 19:14:41.676375"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 11:14:54 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 50ms (Views: 46.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 11:23:13 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 1115ms (Views: 1103.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 11:28:03 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (21.2ms)
+Completed 200 OK in 1094ms (Views: 1081.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 18:35:06 -0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (23.3ms)
+Completed 200 OK in 2785ms (Views: 2759.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 18:45:59 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 1154ms (Views: 1139.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:03:09 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (17.4ms)
+Completed 500 Internal Server Error in 833ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (22:2)
+  20 |   }
+  21 | 
+> 22 |   render: function() {
+     |   ^
+  23 |     var inputProps = {
+  24 |       name: 'appt_time'
+  25 |     };):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2594108094375625652_70228710090480'
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:06:00 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 1128ms (Views: 1116.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-01-03 19:06:32 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Google meeting", "appt_time"=>"Wed Feb 28 2018 00:00:00 GMT-0800 (PST)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Google meeting"], ["appt_time", "2018-02-28 08:00:00"], ["created_at", "2018-01-04 03:06:32.098069"], ["updated_at", "2018-01-04 03:06:32.098069"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:34:10 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "	box-shadow": expected "{", was "; none;"):
+    4:     <title>Calreact</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/appointments.scss:19
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2594108094375625652_70228719337020'
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:34:23 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 1217ms (Views: 1213.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:34:37 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 105ms (Views: 102.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:37:08 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 1164ms (Views: 1149.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:39:11 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (16.4ms)
+Completed 200 OK in 142ms (Views: 135.9ms | ActiveRecord: 0.6ms)
+
+
