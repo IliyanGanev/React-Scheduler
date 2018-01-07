@@ -22,13 +22,17 @@ class Appointments extends React.Component {
 	}
 
 	addNewAppointment (appointment) {
-	const newState = this.state.appointments.concat(appointment);
+		const newState = this.state.appointments.concat(appointment);
 
-	 this.setState({ appointments: newState.sort(function(a, b){
-	 	return new Date(a.appt_time) - new Date(b.appt_time);
-	 }) 
-	});
+	 	this.setState({ appointments: newState.sort(function(a, b){
+	 		return new Date(a.appt_time) - new Date(b.appt_time);
+	 	}) 
+		});
+	}
 
+
+	handleDelete(id) {
+		console.log(id)
 	}
 
 	render (){
@@ -38,7 +42,7 @@ class Appointments extends React.Component {
           input_appt_time={this.state.appt_time}
           onUserInput={(obj) => this.handleUserInput(obj)}
           onFormSubmit={() => this.handleFormSubmit()} />
-        <AppointmentsList appointments={this.state.appointments} />
+        <AppointmentsList handleDelete={(id) => this.handleDelete(id)} appointments={this.state.appointments} />
 			</div>
 		)
 	}
