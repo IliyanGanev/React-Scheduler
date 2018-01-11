@@ -23,7 +23,6 @@ class Appointments extends React.Component {
 
 	addNewAppointment (appointment) {
 		const newState = this.state.appointments.concat(appointment);
-
 	 	this.setState({ appointments: newState.sort(function(a, b){
 	 		return new Date(a.appt_time) - new Date(b.appt_time);
 	 	}) 
@@ -32,7 +31,12 @@ class Appointments extends React.Component {
 
 
 	handleDelete(id) {
-		console.log(id)
+		$.ajax({ url: `/appointments/${id}`,
+		 type: 'DELETE',
+		  success: (response) => { 
+		  	this.setState({ appointments: response });
+		  } 
+		});
 	}
 
 	render (){
