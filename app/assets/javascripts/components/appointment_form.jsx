@@ -33,7 +33,7 @@ class AppointmentForm extends React.Component {
 
             <Datetime input={false} open={true} inputProps={inputProps} 
             value={this.props.appt_time}
-            onChange={(event) => this.setApptTime(event)} />
+             />
 
           <input type='submit' value='Make Appointment' className='submit-button' />
         </form>        
