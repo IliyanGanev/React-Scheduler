@@ -39,6 +39,10 @@ class Appointments extends React.Component {
 		});
 	}
 
+	handleEdit(id) {
+		console.log('Ready to handle edit!')
+	}
+
 	render (){
 		return (
 			<div>
@@ -46,7 +50,7 @@ class Appointments extends React.Component {
           input_appt_time={this.state.appt_time}
           onUserInput={(obj) => this.handleUserInput(obj)}
           onFormSubmit={() => this.handleFormSubmit()} />
-        <AppointmentsList handleDelete={(id) => this.handleDelete(id)} appointments={this.state.appointments} />
+        <AppointmentsList handleDelete={(id) => this.handleDelete(id)} handleEdit={(id) => this.handleEdit(id)} appointments={this.state.appointments} />
 			</div>
 		)
 	}

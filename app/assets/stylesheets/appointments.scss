@@ -28,9 +28,22 @@ body {
 	cursor: pointer;
 	border: 0;
 	box-shadow: none;
-	border-radius: 5px;
+	border-radius: 3px;
 	font-size: 15px;
 	padding: 5px;
+	margin: 2px;
+}
+
+.edit-button {
+	background: #2b69bf;
+	color: #FFFFFF;
+	cursor: pointer;
+	border: 0;
+	box-shadow: none;
+	border-radius: 3px;
+	font-size: 15px;
+	padding: 5px 15px 5px 15px;
+	margin: 2px;
 }
 
 .appointment {

@@ -14,13 +14,20 @@ class AppointmentsList extends React.Component{
       this.props.handleDelete(id);
     }
 
+    handleEdit(id) {
+    	this.props.handleEdit(id);
+    }
+
 	render () {
 		
 		return (
 			<div>
 				{this.props.appointments.map((appointment) => {
 					return(
-						<Appointment handleDelete={() => this.handleDelete(appointment.id)} appointment={appointment} key={appointment.id} />
+						<Appointment appointment={appointment}
+												 key={appointment.id}
+												 handleDelete={() => this.handleDelete(appointment.id)}
+						 						 handleEdit={() => this.handleEdit(appointment.id)} />
 					// <Appointment handleDelete={this.handleDelete.bind(this, appointment.id)} appointment={appointment} key={appointment.id} />
 					)
 				})}
