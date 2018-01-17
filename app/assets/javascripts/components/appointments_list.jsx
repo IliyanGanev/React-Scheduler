@@ -14,8 +14,8 @@ class AppointmentsList extends React.Component{
       this.props.handleDelete(id);
     }
 
-    handleEdit(id) {
-    	this.props.handleEdit(id);
+    onUpdate(editedAppointment) {
+    	this.props.onUpdate(editedAppointment); 
     }
 
 	render () {
@@ -27,7 +27,7 @@ class AppointmentsList extends React.Component{
 						<Appointment appointment={appointment}
 												 key={appointment.id}
 												 handleDelete={() => this.handleDelete(appointment.id)}
-						 						 handleEdit={() => this.handleEdit(appointment.id)} />
+						 						 handleUpdate={(editedAppointment) => this.onUpdate(editedAppointment)} />
 					// <Appointment handleDelete={this.handleDelete.bind(this, appointment.id)} appointment={appointment} key={appointment.id} />
 					)
 				})}

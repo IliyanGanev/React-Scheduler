@@ -14,24 +14,19 @@ class Appointment extends React.Component {
   }
 
 	handleEdit() {
-	 if(this.state.editable){
-	 	const title = this.titleInput.value;
-	 	const time = this.state.time;
-	 	const id = this.props.appointment.id;
-	 	const editedAppointment = {id: id, title: title, appt_time: time}
-	 	console.log(this.state.editable, title, time, editedAppointment)
+		if(this.state.editable){
+	 		const title = this.titleInput.value;
+	 		const time = this.state.time;
+	 		const id = this.props.appointment.id;
+	 		const editedAppointment = {id: id, title: title, appt_time: time};
+	 
+	 		this.props.handleUpdate(editedAppointment);
 	  }
 	  this.setState({editable: !this.state.editable})
 	}
 
 	setApptTime (e) {
-    const name = 'appt_time';
-    const obj = {};
-    if(obj[name] = e.toDate()) {
-    	console.log(obj)
-    	this.setState({time: obj})
-      // this.props.onUserInput(obj);
-    }
+    	this.setState({time: e.toDate()})
   }
 
   render () {

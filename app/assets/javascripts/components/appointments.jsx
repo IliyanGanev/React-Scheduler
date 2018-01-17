@@ -14,7 +14,7 @@ class Appointments extends React.Component {
 
 	handleFormSubmit () {
 	  const appointment = {title: this.state.title, appt_time: this.state.appt_time};
-	  	$.post('/appointments',
+	  	$.post(`/appointments`,
 	  		{appointment: appointment})
 	  	.done((data) => {
 	  		this.addNewAppointment(data);
@@ -39,8 +39,17 @@ class Appointments extends React.Component {
 		});
 	}
 
-	handleEdit(id) {
-		console.log('Ready to handle edit!')
+	handleUpdate(editedAppointment) {
+		const id = editedAppointment.id
+		const time = editedAppointment.appt_time
+		console.log('Ready to handle edit!', id, time)
+		$.ajax({ url: `/appointments/${id}`,
+			type: 'PUT',
+			data: {editedAppointment: editedAppointment},
+			success: (response) => {
+				this.setState({ appointments: response });
+			}
+		});
 	}
 
 	render (){
@@ -50,7 +59,7 @@ class Appointments extends React.Component {
           input_appt_time={this.state.appt_time}
           onUserInput={(obj) => this.handleUserInput(obj)}
           onFormSubmit={() => this.handleFormSubmit()} />
-        <AppointmentsList handleDelete={(id) => this.handleDelete(id)} handleEdit={(id) => this.handleEdit(id)} appointments={this.state.appointments} />
+        <AppointmentsList handleDelete={(id) => this.handleDelete(id)} onUpdate={(editedAppointment) => this.handleUpdate(editedAppointment)} appointments={this.state.appointments} />
 			</div>
 		)
 	}
