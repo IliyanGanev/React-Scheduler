@@ -2,13 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("/assets/BankGothic Regular.ttf");
+
+}
+
 body {
-	width: 500px;
+	width: 90%;
 	margin: auto;
-	font-family: Arial, sans-serif;
+	font-family: myFirstFont, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 	padding-bottom: 200px;
+
 }
 
 .submit-button {
@@ -23,7 +31,7 @@ body {
 }
 
 .delete-button {
-	background: #2b69bf;
+	background: #00caf5;
 	color: #FFFFFF;
 	cursor: pointer;
 	border: 0;
@@ -46,7 +54,23 @@ body {
 	margin: 2px;
 }
 
+
+.newappointmentdiv{
+	display: inline-block;
+	float: left;
+	
+}
+
+
 .appointment {
 	padding-top: 10px;
 	border-bottom: solid 1px #ccc;
+	margin-left: 30em;
+	font-family: myFirstFont;
+}
+@media screen and (max-width: 800px) {
+	.newappointmentdiv{
+		display: block;
+		border:2px solid black;
+	}
 }
