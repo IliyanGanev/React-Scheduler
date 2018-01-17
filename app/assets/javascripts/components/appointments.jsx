@@ -42,13 +42,22 @@ class Appointments extends React.Component {
 	handleUpdate(editedAppointment) {
 		const id = editedAppointment.id
 		const time = editedAppointment.appt_time
-		console.log('Ready to handle edit!', id, time)
+		// console.log('Ready to handle edit!', id, time)
 		$.ajax({ url: `/appointments/${id}`,
 			type: 'PUT',
 			data: {editedAppointment: editedAppointment},
 			success: (response) => {
-				this.setState({ appointments: response });
+				this.updateAppointments(response);
 			}
+		});
+	}
+
+	updateAppointments(appointment){
+		const appointments = this.state.appointments.filter((a) => { return a.id != appointment.id});
+		appointments.push(appointment);
+		this.setState({ appointments: appointments.sort(function(a, b){
+	 		return new Date(a.appt_time) - new Date(b.appt_time);
+	 	}) 
 		});
 	}
 

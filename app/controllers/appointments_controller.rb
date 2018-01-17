@@ -28,10 +28,9 @@ class AppointmentsController < ApplicationController
     title = params[:editedAppointment][:title]
     date = params[:editedAppointment][:appt_time] 
     if appointment.update_attributes(title: title, appt_time: date)
-      @appointments = Appointment.order('appt_time ASC')
-      render json: @appointments
+      render json: appointment
     else
-      render json: @appointment.errors, status: :unprocessable_entity
+      render json: appointment.errors, status: :unprocessable_entity
     end
   end
 
