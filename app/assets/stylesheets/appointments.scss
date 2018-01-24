@@ -18,6 +18,13 @@ body {
 	padding-bottom: 200px;
 
 }
+h1{
+	margin-bottom: 3em;
+	padding-left: 10px;
+	background: black;
+	color:#1dc6df;
+
+}
 
 .submit-button {
 	background: #CC0000;
@@ -28,11 +35,13 @@ body {
 	border-radius: 5px;
 	font-size: 20px;
 	padding: 10px;
+	margin: 2em;
+
 }
 
 .delete-button {
-	background: #00caf5;
-	color: #FFFFFF;
+	background: white;
+	color: #00caf5;
 	cursor: pointer;
 	border: 0;
 	box-shadow: none;
@@ -40,6 +49,12 @@ body {
 	font-size: 15px;
 	padding: 5px;
 	margin: 2px;
+	border:1px solid #00caf5;
+}
+
+.delete-button:hover {
+	background: #00caf5;
+	color: white;
 }
 
 .edit-button {
@@ -52,15 +67,19 @@ body {
 	font-size: 15px;
 	padding: 5px 15px 5px 15px;
 	margin: 2px;
+	border:1px solid #1fcaa7;
 }
 
+.edit-button:hover {
+	border:1px solid #1fcaa7;
+	background: white;
+	color: #1fcaa7;
+}
 
 .newappointmentdiv{
 	display: inline-block;
 	float: left;
-	
 }
-
 
 .appointment {
 	padding-top: 10px;
@@ -73,4 +92,6 @@ body {
 		display: block;
 		border:2px solid black;
 	}
+
+
 }
