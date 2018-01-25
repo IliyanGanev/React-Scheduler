@@ -31173,3 +31173,12 @@ Processing by AppointmentsController#index as HTML
 Completed 200 OK in 674ms (Views: 637.5ms | ActiveRecord: 2.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-01-24 21:39:35 -0800
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (1.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (21.0ms)
+Completed 200 OK in 624ms (Views: 598.0ms | ActiveRecord: 2.5ms)
+
+
