@@ -26,7 +26,7 @@ class AppointmentForm extends React.Component {
     return (
       <div className='newappointmentdiv'>
         <h2>make new appointment</h2>
-        <form autocomplete="on" onSubmit={(event) => this.handleSubmit(event)}>
+        <form autoComplete="on" onSubmit={(event) => this.handleSubmit(event)}>
           <input size="40" name='title' placeholder='Appointment Title'
             value={this.props.title}
             onChange={(event) => this.handleChange(event)} />
