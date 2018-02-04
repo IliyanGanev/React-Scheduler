@@ -24,6 +24,10 @@ h1{
 	background: black;
 	color:#1fcaa7;
 	font-size: 20px;
+  position:fixed;
+  z-index:1;
+	width: 90%;
+
 
 }
 
@@ -37,7 +41,21 @@ h1{
 	font-size: 20px;
 	padding: 10px;
 	margin: 2em;
+	border:1px solid #CC0000;
 }
+.submit-button:hover {
+	background: #FFFFFF;
+	color: #CC0000;
+	cursor: pointer;
+	border: 0;
+	box-shadow: none;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	margin: 2em;
+	border:1px solid #CC0000;
+}
+
 
 .delete-button {
 	background: white;
@@ -79,10 +97,11 @@ h1{
 .newappointmentdiv{
 	display: inline-block;
 	float: left;
+	padding-top: 100px;
 }
 
 .appointment {
-	padding-top: 10px;
+	padding-top: 80px;
 	border-bottom: solid 1px #ccc;
 	margin-left: 30em;
 	font-family: myFirstFont;
