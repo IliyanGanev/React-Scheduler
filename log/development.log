@@ -33390,3 +33390,284 @@ Processing by AppointmentsController#index as HTML
 Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-02-03 22:10:43 -0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 766ms (Views: 743.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-03 22:11:13 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 129ms (Views: 125.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-03 22:11:21 -0800
+Processing by AppointmentsController#index as HTML
+  Rendering appointments/index.html.haml within layouts/application
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+  Rendered appointments/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 118ms (Views: 113.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/appointments/58" for 127.0.0.1 at 2018-02-03 22:11:35 -0800
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"58"}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = ?[0m  [["id", 58]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+Completed 200 OK in 13ms (Views: 3.8ms | ActiveRecord: 2.7ms)
+
+
+Started DELETE "/appointments/59" for 127.0.0.1 at 2018-02-03 22:11:39 -0800
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"59"}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = ?[0m  [["id", 59]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+Completed 200 OK in 9ms (Views: 2.6ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/appointments/60" for 127.0.0.1 at 2018-02-03 22:11:40 -0800
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"60"}
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT ?[0m  [["id", 60], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = ?[0m  [["id", 60]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/appointments/51" for 127.0.0.1 at 2018-02-03 22:11:40 -0800
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"51"}
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = ?[0m  [["id", 51]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/appointments/55" for 127.0.0.1 at 2018-02-03 22:11:41 -0800
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"55"}
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = ?[0m  [["id", 55]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/appointments/56" for 127.0.0.1 at 2018-02-03 22:11:42 -0800
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"56"}
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = ?[0m  [["id", 56]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+Completed 200 OK in 9ms (Views: 3.7ms | ActiveRecord: 2.7ms)
+
+
+Started DELETE "/appointments/57" for 127.0.0.1 at 2018-02-03 22:11:42 -0800
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"57"}
+  [1m[36mAppointment Load (0.1ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = ?[0m  [["id", 57]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/appointments/63" for 127.0.0.1 at 2018-02-03 22:11:44 -0800
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"63"}
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = ?[0m  [["id", 63]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/appointments/64" for 127.0.0.1 at 2018-02-03 22:11:44 -0800
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"64"}
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT ?[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = ?[0m  [["id", 64]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:11:50 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Standup Meeting", "appt_time"=>"Thu Feb 22 2018 00:00:00 GMT-0800 (PST)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Standup Meeting"], ["appt_time", "2018-02-22 08:00:00"], ["created_at", "2018-02-04 06:11:50.987476"], ["updated_at", "2018-02-04 06:11:50.987476"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:12:13 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Appointment", "appt_time"=>"Wed Mar 28 2018 00:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Appointment"], ["appt_time", "2018-03-28 07:00:00"], ["created_at", "2018-02-04 06:12:13.054363"], ["updated_at", "2018-02-04 06:12:13.054363"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:12:25 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Date mate", "appt_time"=>"Fri Mar 30 2018 00:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Date mate"], ["appt_time", "2018-03-30 07:00:00"], ["created_at", "2018-02-04 06:12:25.450419"], ["updated_at", "2018-02-04 06:12:25.450419"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:12:26 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Date mate", "appt_time"=>"Fri Mar 30 2018 00:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Date mate"], ["appt_time", "2018-03-30 07:00:00"], ["created_at", "2018-02-04 06:12:26.872625"], ["updated_at", "2018-02-04 06:12:26.872625"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:12:28 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Date mate", "appt_time"=>"Fri Mar 30 2018 00:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Date mate"], ["appt_time", "2018-03-30 07:00:00"], ["created_at", "2018-02-04 06:12:28.091102"], ["updated_at", "2018-02-04 06:12:28.091102"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:12:35 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Date mate", "appt_time"=>"Fri Mar 30 2018 23:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Date mate"], ["appt_time", "2018-03-31 06:00:00"], ["created_at", "2018-02-04 06:12:35.305126"], ["updated_at", "2018-02-04 06:12:35.305126"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:13:07 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Check mate ", "appt_time"=>"Fri Mar 30 2018 23:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Check mate "], ["appt_time", "2018-03-31 06:00:00"], ["created_at", "2018-02-04 06:13:07.061479"], ["updated_at", "2018-02-04 06:13:07.061479"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:13:07 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Check mate ", "appt_time"=>"Fri Mar 30 2018 23:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Check mate "], ["appt_time", "2018-03-31 06:00:00"], ["created_at", "2018-02-04 06:13:07.380480"], ["updated_at", "2018-02-04 06:13:07.380480"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:13:07 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Check mate ", "appt_time"=>"Fri Mar 30 2018 23:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Check mate "], ["appt_time", "2018-03-31 06:00:00"], ["created_at", "2018-02-04 06:13:07.629055"], ["updated_at", "2018-02-04 06:13:07.629055"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:13:07 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Check mate ", "appt_time"=>"Fri Mar 30 2018 23:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Check mate "], ["appt_time", "2018-03-31 06:00:00"], ["created_at", "2018-02-04 06:13:07.877034"], ["updated_at", "2018-02-04 06:13:07.877034"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:13:08 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Check mate ", "appt_time"=>"Fri Mar 30 2018 23:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Check mate "], ["appt_time", "2018-03-31 06:00:00"], ["created_at", "2018-02-04 06:13:08.181294"], ["updated_at", "2018-02-04 06:13:08.181294"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:13:08 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Check mate ", "appt_time"=>"Fri Mar 30 2018 23:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Check mate "], ["appt_time", "2018-03-31 06:00:00"], ["created_at", "2018-02-04 06:13:08.463174"], ["updated_at", "2018-02-04 06:13:08.463174"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:13:08 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Check mate ", "appt_time"=>"Fri Mar 30 2018 23:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Check mate "], ["appt_time", "2018-03-31 06:00:00"], ["created_at", "2018-02-04 06:13:08.638756"], ["updated_at", "2018-02-04 06:13:08.638756"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:13:08 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Check mate ", "appt_time"=>"Fri Mar 30 2018 23:00:00 GMT-0700 (PDT)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Check mate "], ["appt_time", "2018-03-31 06:00:00"], ["created_at", "2018-02-04 06:13:08.839513"], ["updated_at", "2018-02-04 06:13:08.839513"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/appointments" for 127.0.0.1 at 2018-02-03 22:13:14 -0800
+Processing by AppointmentsController#create as */*
+  Parameters: {"appointment"=>{"title"=>"Check mate ", "appt_time"=>"Mon Feb 26 2018 23:00:00 GMT-0800 (PST)"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "appointments" ("title", "appt_time", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Check mate "], ["appt_time", "2018-02-27 07:00:00"], ["created_at", "2018-02-04 06:13:14.929775"], ["updated_at", "2018-02-04 06:13:14.929775"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/appointments/49" for 127.0.0.1 at 2018-02-03 22:13:24 -0800
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"49"}
+  [1m[36mAppointment Load (0.1ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = ?[0m  [["id", 49]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 3.1ms)
+
+
+Started DELETE "/appointments/65" for 127.0.0.1 at 2018-02-03 22:13:26 -0800
+Processing by AppointmentsController#destroy as */*
+  Parameters: {"id"=>"65"}
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "appointments" WHERE "appointments"."id" = ?[0m  [["id", 65]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" ORDER BY appt_time ASC[0m
+Completed 200 OK in 20ms (Views: 12.7ms | ActiveRecord: 3.8ms)
+
+
