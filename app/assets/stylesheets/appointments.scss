@@ -22,7 +22,8 @@ h1{
 	margin-bottom: 3em;
 	padding-left: 10px;
 	background: black;
-	color:#1dc6df;
+	color:#1fcaa7;
+	
 
 }
 
@@ -36,7 +37,6 @@ h1{
 	font-size: 20px;
 	padding: 10px;
 	margin: 2em;
-
 }
 
 .delete-button {
@@ -87,6 +87,34 @@ h1{
 	margin-left: 30em;
 	font-family: myFirstFont;
 }
+
+.star {
+cursor: pointer;
+height: 14px;
+width: 14px;
+margin: 2px;
+float: left;
+background-color: grey;
+clip-path: polygon(
+50% 0%,
+63% 38%,
+100% 38%,
+69% 59%,
+82% 100%,
+50% 75%,
+18% 100%,
+31% 59%,
+0% 38%,
+37% 38%
+);
+}
+.star.selected {
+background-color: #1fcaa7;
+}
+
+
+
+
 @media screen and (max-width: 800px) {
 	.newappointmentdiv{
 		display: block;

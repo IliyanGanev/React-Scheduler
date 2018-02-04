@@ -68,7 +68,7 @@ class Appointments extends React.Component {
           input_appt_time={this.state.appt_time}
           onUserInput={(obj) => this.handleUserInput(obj)}
           onFormSubmit={() => this.handleFormSubmit()} />
-        <AppointmentsList handleDelete={(id) => this.handleDelete(id)} onUpdate={(editedAppointment) => this.handleUpdate(editedAppointment)} appointments={this.state.appointments} />
+       <AppointmentsList handleDelete={(id) => this.handleDelete(id)} onUpdate={(editedAppointment) => this.handleUpdate(editedAppointment)} appointments={this.state.appointments} />
 			</div>
 		)
 	}

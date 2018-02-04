@@ -33,12 +33,14 @@ class Appointment extends React.Component {
   	const title = this.state.editable ? <input type='text' ref={input => { this.titleInput = input;}} defaultValue={this.props.appointment.title} /> : <h3>{this.props.appointment.title}</h3>;
 		const time = this.state.editable ? <Datetime input={false} ref={input => { this.timeInput = input;}} open={true} defaultvalue={this.props.appointment.appt_time} onChange={(event) => this.setApptTime(event)} /> : <p>{formatDate(this.props.appointment.appt_time)}</p>;
 		const editbutton = this.state.editable ? <input onClick={() => this.handleEdit()} type='submit' value='Submit' className='edit-button' /> : <input onClick={() => this.handleEdit()} type='submit' value='Edit' className='edit-button' /> 
+		
 		return (
 			<div className='appointment'>
 				{title}
 				{time}
 					<input onClick={() => this.props.handleDelete()} type='submit' value='Delete' className='delete-button' />
-					{editbutton}
+					{editbutton} 
+					<StarRating totalStars={7} starsSelected={3} />
 			</div>
 		)
 	}
