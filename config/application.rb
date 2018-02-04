@@ -16,5 +16,6 @@ module Calreact
     # -- all .rb files in that directory are automatically loaded.
     config.react.addons = true
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    config.assets.precompile += %w(.svg .eot .woff .ttf)
   end
 end
